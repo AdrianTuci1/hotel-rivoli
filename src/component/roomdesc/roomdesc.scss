@@ -1,0 +1,68 @@
+@use '../../global.scss' as media;
+
+.roomdesc{
+    position: relative;
+    width: 620px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #161514;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    @include media.tablet{
+        width: 550px;
+        height: 300px;
+    }
+
+    @include media.phone{
+        width: 450px;
+        height: 300px;
+    }
+}
+
+ul{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14;
+}
+
+.ti{
+    font-family: 'Sedan SC', sans-serif;
+    margin-left: 23%;
+}
+
+.bathroom{
+    margin-top: 20px;
+}
+
+.rd-1{
+    margin-left: 10%;
+
+    @include media.tablet{
+        margin-left: 0%;
+    }
+
+    @include media.phone{
+        margin-left: 0%;
+    }
+}
+
+.rd-2{
+    margin-top: -13%;
+    margin-right: 10%;
+}
+
+.rd-3{
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+
+

@@ -1,0 +1,68 @@
+
+.pges{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bxs-cont{
+    position: absolute;
+    background-color: #f2e9e4;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+.wripe{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.wripe .logo img{
+    width: 120px;
+    height: 120px;
+}
+
+.logo{
+    transform: translateX(5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+}
+
+.loder{
+    margin-top: 20px;
+    width: 200px;
+    height: 28px;
+    transform: translateX(32%);
+}
+
+.boxo{
+    width: 100%;
+    height: 100%;
+}
+
+.boxo:nth-child(1) {
+    background-color: #f2e9e4;
+}
+
+.boxo:nth-child(2){
+    background-color: #22223b;
+}
+
+.boxo:nth-child(3){
+    background-color: #692f60;
+}
+

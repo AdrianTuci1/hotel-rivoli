@@ -1,0 +1,57 @@
+@use '../../global.scss' as media;
+
+.full-viewport {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .boxz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 200px; /* Center text vertically */
+
+    @include media.phone{
+      width: 70px;
+      height: 70px;
+      margin: 0px;
+    }
+
+    @include media.tablet{
+      margin: 0px;
+      width: 180px;
+      height: 180px;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+      margin:auto;
+
+      @include media.phone{
+        margin: 0px;
+        width: 70px;
+        height: 70px;
+      }
+      @include media.tablet{
+        margin: 0px;
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  
+  .center {
+    z-index: 1;
+  }
+
+
+  
+  
+

@@ -1,0 +1,88 @@
+@use '../../global.scss' as media;
+
+.pachete{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.continut{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    display: flex;
+    margin-left: 30px;
+    color: #692f60;
+    gap: 25px;
+
+    @include media.phone{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        height: auto;
+    }
+
+    @include media.tablet{
+        margin-left: 25px;
+        height: auto;
+    }
+    .locatie{
+        font-family: 'Sedan SC', sans-serif;
+        font-size: 90px;
+        font-weight: 400;
+        flex:1;
+
+        @include media.phone{
+            margin-left: -7px;
+            height: auto;
+        }
+
+        @include media.tablet{
+            margin-left: -7px;
+            height: auto;
+        }
+    }
+    .descriere{
+        flex:1;
+        margin-top: 16px;
+        margin-right: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        text-align: left;        
+    }
+}
+
+.mapz{
+    margin-top: 5%;
+    width: 100%;
+    height: 185vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow: hidden;
+    justify-content: center;
+    .contmap{
+        height: 660px;
+        width: 90vw;
+        border-radius: 50px;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+}
+
+.panou-c{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+    height: 50vh;
+
+    @include media.desktop{
+        display: none;
+    }
+
+}

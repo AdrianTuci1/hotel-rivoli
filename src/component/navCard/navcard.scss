@@ -1,0 +1,55 @@
+@use '../../global.scss' as media;
+
+.image-card {
+    display: flex;
+    width: 460px;
+    height: 240px;
+    border-radius: 25px; /* Adjust for desired roundedness */
+    overflow: hidden; /* Clip image within bounds */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    display: flex; /* Stack image and description vertically */
+    flex-direction: column; /* Align items on top */
+    justify-content: space-between; /* Distribute space between image and description */
+
+    @include media.desktop{
+      width: 560px;
+      height: 260px;
+    }
+  }
+  
+  .image-card img {
+    width: 100%; /* Fill container width */
+    height: 100%; /* Fill container height */
+    object-fit: cover; /* Crop image to fit container while maintaining aspect ratio */
+  }
+  
+  .image-card-description {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    object-fit: cover;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #333;
+    display: flex;
+    padding: 10px 30px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    color: white; /* Adjust text color as needed */
+    text-align: center; /* Center text within description area */
+  }
+
+  .img-crd-wrap{
+    object-fit: cover;
+    position: absolute;
+    border-radius: 25px;
+    width: 460px;
+    height: 240px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @include media.desktop{
+      width: 560px;
+      height: 260px;
+    }
+  }

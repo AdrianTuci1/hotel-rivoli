@@ -1,0 +1,48 @@
+@use '../../global.scss' as media;
+
+.sec7{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.continut7{
+    flex:1;
+    display: flex;
+    width: 100%;
+    height: 200vh;
+    color: #692f60;
+
+    @include media.phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .bxz1{
+        flex: 1;
+    }
+    .continut3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 25px;
+        margin-right: 50px;
+        flex:1;
+
+        @include media.tablet{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.image-card-container{
+    margin-top: 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

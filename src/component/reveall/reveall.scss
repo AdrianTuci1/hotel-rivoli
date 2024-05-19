@@ -1,0 +1,22 @@
+@use '../../global.scss' as media;
+
+.container {
+  overflow: hidden;
+  height: 150px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  /* Add other styles for the container as needed (width, margin, etc.) */
+  letter-spacing: 1px;
+
+  @include media.tablet{
+    height: 100px;
+  }
+  @include media.phone{
+    height: 100px;
+  }
+}
+
+.letterss{
+  letter-spacing: 1px;
+}

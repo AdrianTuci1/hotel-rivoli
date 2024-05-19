@@ -1,0 +1,22 @@
+@keyframes rise {
+    from {
+      transform: translateY(120%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .boxy {
+    animation: rise 200ms ease-in-out forwards;
+  }
+
+  .caseta{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  

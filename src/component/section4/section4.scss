@@ -1,0 +1,46 @@
+@use '../../global.scss' as media;
+
+.section-4{
+    width: 100%;
+    min-height: 300vh;
+    background-color: #22223b;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .optionm{
+        text-align: center;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 620px;
+
+        @include media.tablet{
+            width: 550px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include media.phone{
+            width: 450px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h4{
+            font-weight: 100;
+            font-size: 16px;
+
+        }
+    }
+}
+

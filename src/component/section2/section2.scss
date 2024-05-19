@@ -1,0 +1,48 @@
+@use '../../global.scss' as media;
+
+.sec2{
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    @include media.phone{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        height: auto;
+    }
+
+    @include media.tablet{
+        margin-left: 25px;
+        height: auto;
+    }
+    span{
+        margin-left: 30px;
+        font-family: 'Sedan SC', sans-serif;
+        font-size: 90px;
+        font-weight: 400;
+        color: #692f60;
+        width: 70%;
+
+        @include media.phone{
+            display: flex;
+            flex-direction: column;
+            margin-left: -7px;
+            height: auto;
+        }
+
+        @include media.tablet{
+            margin-left: -7px;
+            height: auto;
+        }
+    }
+    p{
+        width: 70%;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+        color: #692f60;
+    }
+}

@@ -1,0 +1,91 @@
+@use '../../global.scss' as media;
+
+.content8wrap{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content8{
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    margin-left: 30px;
+    color: #692f60;
+    gap: 25px;
+    @include media.phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactt{
+        font-family: 'Sedan SC', sans-serif;
+        font-size: 70px;
+        font-weight: 400;
+        flex:1;
+    }
+    .descrieree{
+        flex:1;
+        margin-top: 16px;
+        margin-right: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        text-align: left;        
+    }
+}
+
+.formz{
+    flex: 1;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interesat{
+    margin: 20px 25px;
+    margin-bottom: 30px;
+    min-height: 140px;
+    color: white;
+    background-color: #252422;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex: 1;
+
+    @include media.desktop{
+        margin-left: 26%;
+        margin-right: 26%;
+      }
+    .inters{
+        font-family: 'Sedan SC', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .bs{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .btnn{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        border: none;
+        background-color: #4c1e45;
+        color: white;
+        border-radius: 48px;
+        width: 138px;
+        height: 38px;
+        cursor: pointer;
+    }
+}
