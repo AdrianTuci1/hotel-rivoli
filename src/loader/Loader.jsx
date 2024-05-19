@@ -1,5 +1,5 @@
 import React from 'react'
-import './loader.css'
+import './loader.scss'
 import { PulseLoader } from 'react-spinners'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -8,7 +8,6 @@ function Loaderz() {
     useGSAP(() => {
         gsap.to('.boxo',{
             delay: 1.3,
-            scrub: 1,
             y:'-300%',
             duration: 2,
             ease: 'back.in',
@@ -17,7 +16,6 @@ function Loaderz() {
 
         gsap.to('.loder',{
             delay: 2,
-            scrub: 1,
             y:'140%',
             duration: 1,
             ease: 'power1.out',
@@ -25,7 +23,6 @@ function Loaderz() {
 
         gsap.to('.anime',{
             delay: 2,
-            scrub: 1,
             y:'140%',
             duration: 1,
             ease: 'power1.out',

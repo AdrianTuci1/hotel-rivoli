@@ -13,21 +13,20 @@ function Footer() {
         gsap.from('.primrand', {
             scrollTrigger:{
                 trigger: ".stickyy",
-                scrub: 1,
-                pin: true,
-                start: 'bottom bottom',
+                scrub: true,
+                start: '60% bottom',
                 end: 'bottom bottom',
                 toggleActions: "restart pause reverse pause"
             },
             y: window.innerHeight * -0.18,
-            duration: 4,
-            ease: "power1.in",
+            duration: 2,
+            ease: "sine.in",
         })
 
         gsap.from('.foocontainer', {
             scrollTrigger:{
                 trigger: ".stickyy",
-                scrub: 1,
+                scrub: true,
                 pin: true,
                 start: 'bottom bottom',
                 end: 'bottom bottom',

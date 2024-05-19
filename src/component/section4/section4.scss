@@ -15,17 +15,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 620px;
+        width: 370px;
+        max-width: 620px;
 
         @include media.tablet{
-            width: 550px;
+            max-width: 550px;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         @include media.phone{
-            width: 450px;
+            width: 370px;
+            max-width: 450px;
             text-align: center;
             display: flex;
             flex-direction: column;

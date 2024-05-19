@@ -5,7 +5,7 @@
   justify-content: flex-end;
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 100%;
 }
 
 .sectionu {
@@ -20,6 +20,10 @@
   margin-right: 20px;
   padding-left: 20px;
   padding-right: 15px;
+  @include media.phone{
+    margin-right: 20px;
+  }
+
   .language {
     display: flex;
     justify-content: center;
@@ -88,21 +92,34 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  right: 10px;
+  @include media.phone{
+    right: 30%;
+  }
+  @include media.tablet{
+    right: 15%;
+  }
 }
 
 .altpachet {
-    transform: translate(-50%, 0%);
+  top: -5px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;/* Higher z-index to be on top of other elements */
   position: fixed;
   z-index: 2;
+  @include media.phone{
+    right: 0px;
+  }
+  @include media.tablet{
+    right: -10px;
+  }
 }
 
 .contact {
   bottom: 0%;
-  transform: translate(-60%);
   position: fixed;
   width: 200px;
   height: 40px;
@@ -115,6 +132,15 @@
   color: white;
   padding: 2px 7px;
   z-index: 9999; /* Higher z-index to be on top of other elements */
+  @include media.phone{
+    right: 10px;
+  }
+  @include media.tablet{
+  }
+
+  @include media.desktop{
+    right: 20px;
+  }
   span {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -137,4 +163,11 @@
   margin-left: -3px;
   width: 19px;
   height: 19px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .contact{
+    right: 2%;
+  }
 }

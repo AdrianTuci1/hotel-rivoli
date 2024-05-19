@@ -18,6 +18,7 @@
     @include media.phone{
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
     .bxz1{
         flex: 1;

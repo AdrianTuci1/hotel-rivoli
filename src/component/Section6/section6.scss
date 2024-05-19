@@ -14,6 +14,7 @@
     margin-left: 30px;
     color: #692f60;
     gap: 25px;
+    overflow-y: hidden;
 
     @include media.phone{
         display: flex;
@@ -26,6 +27,7 @@
         margin-left: 25px;
         height: auto;
     }
+
     .locatie{
         font-family: 'Sedan SC', sans-serif;
         font-size: 90px;
@@ -35,6 +37,7 @@
         @include media.phone{
             margin-left: -7px;
             height: auto;
+            font-size: 60px;
         }
 
         @include media.tablet{
@@ -61,6 +64,12 @@
     overflow-x: hidden;
     overflow: hidden;
     justify-content: center;
+    @include media.tablet{
+        height: 150vh;
+    }
+    @include media.phone{
+        height: 130vh;
+    }
     .contmap{
         height: 660px;
         width: 90vw;
@@ -79,10 +88,19 @@
     display: flex;
     justify-content: center;
     margin-top: -5%;
-    height: 50vh;
+    height: 100%;
 
     @include media.desktop{
         display: none;
+    }
+
+    @include media.tablet{
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+
+    @include media.phone{
+        margin-bottom: 25%;
     }
 
 }

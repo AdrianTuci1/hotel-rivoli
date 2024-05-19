@@ -23,7 +23,7 @@ const Reveall = ({ sentence }) => {
         trigger: containerRef.current,
         start: 'bottom bottom',
         end: '+=300',
-        scrub: '2',
+        scrub: true,
         toggleActions: 'restart pause reverse pause',
       },
       stagger: 5,

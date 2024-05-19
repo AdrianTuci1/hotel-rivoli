@@ -17,7 +17,7 @@ const BoxScrollRev = () => {
     gsap.from(box2rRef.current, {
       scrollTrigger: {
         trigger: ".fullr-viewport", // Trigger on container element
-        scrub: 1, // Enable scrubbing based on scroll position
+        scrub: true, // Enable scrubbing based on scroll position
         start: "center center", // Start animation at container center
         end: "+=700", // End animation 1000px past the start
         toggleActions: "restart pause reverse pause", // Animation controls

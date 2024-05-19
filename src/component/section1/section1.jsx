@@ -11,7 +11,6 @@ function Section1() {
   useGSAP(() => {
     gsap.from('.item',{
         delay: 0.4,
-        scrub: 1,
         opacity: 0,
         duration: 2,
         ease: 'back.in',

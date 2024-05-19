@@ -8,7 +8,6 @@ function NavRight() {
     useGSAP(() => {
         gsap.from('.sectionu',{
             delay: 0.4,
-            scrub: 1,
             y:'-150%',
             duration: 2,
             ease: 'bounce.in',
@@ -16,7 +15,6 @@ function NavRight() {
 
         gsap.from('.contact',{
             delay: 0.4,
-            scrub: 1,
             y:'+150%',
             duration: 2,
             ease: 'bounce.in',

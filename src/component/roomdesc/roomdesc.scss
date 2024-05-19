@@ -20,8 +20,9 @@
     }
 
     @include media.phone{
-        width: 450px;
-        height: 300px;
+        width: 350px;
+        height: 400px;
+        max-width: 450px;
     }
 }
 
@@ -56,6 +57,10 @@ ul{
 .rd-2{
     margin-top: -13%;
     margin-right: 10%;
+    @include media.phone{
+        margin-top: 1%;
+        margin-left: 10%;
+    }
 }
 
 .rd-3{

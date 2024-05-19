@@ -1,3 +1,4 @@
+@use '../global.scss' as media;
 
 .pges{
     width: 100vw;
@@ -6,6 +7,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    @include media.phone{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
 }
 
 .bxs-cont{

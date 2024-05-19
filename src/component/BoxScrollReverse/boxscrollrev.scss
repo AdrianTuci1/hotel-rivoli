@@ -35,8 +35,8 @@
       margin:auto;
 
       @include media.phone{
-        width: 70px;
-        height: 70px;
+        max-width: 150px;
+        max-height: 150px;
         margin: 0px;
       }
   

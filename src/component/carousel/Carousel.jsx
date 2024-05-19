@@ -12,7 +12,7 @@ const Carousel = () => {
     gsap.to(".circle-container", {
         scrollTrigger: {
             trigger: ".mainp",
-            scrub: 1,
+            scrub: true,
             start: 'top right',
             end: '+=1800',
             toggleActions: 'restart pause reverse pause'
@@ -25,7 +25,7 @@ const Carousel = () => {
     gsap.to(".box", {
         scrollTrigger: {
           trigger: ".mainp",
-          scrub: 1,
+          scrub: true,
           start: '',
           end: '+=1800',
           toggleActions: 'restart pause reverse pause'
