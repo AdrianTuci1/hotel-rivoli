@@ -11,13 +11,14 @@
   }
   
   .boxz {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
     margin: 0 20px;
     text-align: center;
     line-height: 200px; /* Center text vertically */
-
     @include media.phone{
       width: 50px;
       height: 50px;

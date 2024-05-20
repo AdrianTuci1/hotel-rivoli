@@ -59,16 +59,21 @@
 .mapz{
     margin-top: 5%;
     width: 100%;
-    height: 185vh;
+    height: 150vh;
     display: flex;
     overflow-x: hidden;
     overflow: hidden;
     justify-content: center;
-    @include media.tablet{
+    @include media.desktop{
         height: 150vh;
+        margin-bottom: 10%;
+    }
+    @include media.tablet{
+        height: 140vh;
     }
     @include media.phone{
-        height: 130vh;
+        width: 100%;
+        height: 150vh;
     }
     .contmap{
         height: 660px;
@@ -95,7 +100,7 @@
     }
 
     @include media.tablet{
-        margin-top: 15%;
+        margin-top: 20%;
         margin-bottom: 20%;
     }
 

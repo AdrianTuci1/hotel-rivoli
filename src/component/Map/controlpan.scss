@@ -21,6 +21,9 @@
         flex-wrap: wrap;
         height: 120px;
       }
+    @include media.phone{
+        margin: 0% 10%;
+    }
 }
 
 .tit{

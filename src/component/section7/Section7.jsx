@@ -6,9 +6,9 @@ import NavCard from '../navCard/NavCard'
 function Section7() {
 
     const images = [
-        { src: './metrou.JPG', description: 'METROU 1 DECEMBRIE 1918 - 700M' },
-        { src: './parklake.png', description: 'CENTRUL COMERCIAL PARK LAKE - 3000M' },
-        { src: './parcultitan.jpg', description: "PARCUL TITAN - 2000M"}
+        { src: './metrou.JPG', description: 'METROU 1 DECEMBRIE 1918 - 700M', link:`${import.meta.env.VITE_MAP_METROU}` },
+        { src: './parklake.png', description: 'CENTRUL COMERCIAL PARK LAKE - 3000M', link:`${import.meta.env.VITE_MAP_PARK}`},
+        { src: './parcultitan.jpg', description: "PARCUL TITAN - 2000M", link:`${import.meta.env.VITE_MAP_TITAN}`}
       ];
 
   return (
@@ -29,6 +29,7 @@ function Section7() {
         key={image.src} 
         imageSrc={image.src} 
         description={image.description}
+        link={image.link}
         />
     ))}
     </div>

@@ -12,14 +12,14 @@ useGSAP(() =>{
   gsap.to('.contmap', {
     scrollTrigger:{
       trigger: '.contmap',
-      scrub: '2',
-      start: '50% bottom',
-      end: '+=650',
+      scrub: 0,
+      start: '40% bottom',
+      end: '+=700',
       toggleActions: 'restart pause reverse pause',
     },
     duration: 2,
-    zoom: 1.3,
-    y: +180,
+    scale: 1.4,
+    y: +270,
     ease: 'power3.in',
   })
 }, [])

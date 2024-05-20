@@ -19,8 +19,8 @@
         }
 
         @include media.phone{
-            width: 350px;
-            height: 350px;
+            width: 380px;
+            height: 380px;
             max-width: 450px;
             max-height: 450px;
         }
@@ -39,12 +39,23 @@
         .button{
             border: none;
             background-color: black;
-            margin-top: 7px;
-            height: 25px;
+            margin-top: 5px;
+            height: 30px;
+            width: 30px;
             border-radius: 10px;
             margin-left: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
         }
+    }
+}
+
+.chevr{
+    &:hover{
+        width: 12px;
+        height: 12px;
     }
 }
 

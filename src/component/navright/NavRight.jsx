@@ -43,8 +43,8 @@ function NavRight() {
     <div className="contact">
         <span>PUTEM VORBI</span>
         <a href={import.meta.env.VITE_WHATSAPP_URL} target="_blank" className="whapp zip"><MessageCircleMore width={20}/></a>
-        <a href="/" className="tel zip"><Phone width={20}/></a>
-        <a href="/" className="mail zip"><Mail width={20}/></a>
+        <a href="tel:0791644000" className="tel zip"><Phone width={20}/></a>
+        <a href="mailto:hotel_rivoli@email.com?subject=pre-filled subject" className="mail zip"><Mail width={20}/></a>
     </div>
     </div>
     </div>

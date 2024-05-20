@@ -11,6 +11,10 @@
     flex-direction: column; /* Align items on top */
     justify-content: space-between; /* Distribute space between image and description */
     margin-bottom: 20px;
+    &:hover{
+      scale: 1.05;
+      cursor: pointer;
+    }
 
     @include media.desktop{
       width: 560px;
@@ -19,7 +23,7 @@
 
     @include media.phone{
       width: 350px;
-      height: 260px;
+      height: 230px;
     }
   }
   
@@ -30,7 +34,8 @@
   }
   
   .image-card-description {
-    width: 100%;
+    position: absolute;
+    width: 400px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 100;
@@ -38,20 +43,26 @@
     border-radius: 0px 0px 25px 25px;
     background-color: #333;
     display: flex;
+    justify-content: center;
     padding: 10px 30px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
     color: white; /* Adjust text color as needed */
     text-align: center; /* Center text within description area */
+
+    @include media.desktop{
+      width: 500px;
+    }
+    @include media.phone{
+      width: 290px;
+    }
   }
 
   .img-crd-wrap{
     object-fit: cover;
-    position: absolute;
     border-radius: 25px;
     width: 100%;
     height: 260px;
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
 
     @include media.desktop{
@@ -66,4 +77,9 @@
     @include media.phone{
       width: 350px;
     }
+  }
+
+  .lin-k{
+    height: 230px;
+    border-radius: 50px;
   }

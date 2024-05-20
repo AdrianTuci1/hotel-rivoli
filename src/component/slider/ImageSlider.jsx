@@ -25,8 +25,8 @@ const ImageSlider = ({ images }) => {
       />
       <div className="barslide">
       <div className="buttons">
-      <button onClick={handlePrev} className='button prev'><ChevronLeft color={'white'} size={'small'}/></button>
-      <button onClick={handleNext} className='button next'><ChevronRight color={'white'} size={'small'}/></button>
+      <button onClick={handlePrev} className='button prev'><ChevronLeft color={'white'} size={15} className='chevr'/></button>
+      <button onClick={handleNext} className='button next'><ChevronRight color={'white'} size={15} className='chevr'/></button>
       </div>
       </div>
     </div>
