@@ -20,6 +20,8 @@
     }
 
     @include media.phone{
+        display: flex;
+        flex-direction: column;
         width: 380px;
         height: 400px;
         max-width: 450px;
@@ -35,7 +37,7 @@ ul{
 
 .ti{
     font-family: 'Sedan SC', sans-serif;
-    margin-left: 23%;
+    margin-left: 40px;
 }
 
 .bathroom{
@@ -44,13 +46,12 @@ ul{
 
 .rd-1{
     margin-left: 10%;
-
     @include media.tablet{
         margin-left: 0%;
     }
 
     @include media.phone{
-        margin-left: 0%;
+        margin-left: -40%;
     }
 }
 
@@ -59,7 +60,7 @@ ul{
     margin-right: 10%;
     @include media.phone{
         margin-top: 1%;
-        margin-left: 10%;
+        margin-left: -20%;
     }
 }
 

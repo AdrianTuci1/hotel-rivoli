@@ -2,7 +2,6 @@ import React from 'react'
 import './section6.scss'
 import MyMap from '../Map/Map';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import ControlPanel from '../Map/control-panel';
 
@@ -38,7 +37,7 @@ useGSAP(() =>{
     </div>
     <div className="mapz">
       <div className="contmap">
-        <MyMap />
+        <MyMap/>
         </div>
     </div>
     <div className="panou-c">

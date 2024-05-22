@@ -8,6 +8,8 @@
     align-items: center;
     overflow: hidden;
     @include media.phone{
+        width: 100%;
+        margin-bottom: -10%;
         overflow-y: hidden;
         overflow-x: hidden;
     }

@@ -14,7 +14,7 @@ const Carousel = () => {
             trigger: ".mainp",
             scrub: true,
             start: 'top right',
-            end: '+=1800',
+            end: '+=2500',
             toggleActions: 'restart pause reverse pause'
         },
         rotation: 100,
@@ -27,7 +27,7 @@ const Carousel = () => {
           trigger: ".mainp",
           scrub: true,
           start: '',
-          end: '+=1800',
+          end: '+=2500',
           toggleActions: 'restart pause reverse pause'
         },
         rotation: -100, // Adjust rotation as needed

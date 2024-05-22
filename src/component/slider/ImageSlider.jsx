@@ -28,6 +28,9 @@ const ImageSlider = ({ images }) => {
       <button onClick={handlePrev} className='button prev'><ChevronLeft color={'white'} size={15} className='chevr'/></button>
       <button onClick={handleNext} className='button next'><ChevronRight color={'white'} size={15} className='chevr'/></button>
       </div>
+      <div className="slide-description">
+
+      </div>
       </div>
     </div>
   );
