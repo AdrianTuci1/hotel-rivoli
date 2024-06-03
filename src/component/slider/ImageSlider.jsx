@@ -3,7 +3,7 @@ import './imageSlider.scss'
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 
-const ImageSlider = ({ images }) => {
+const ImageSlider = ({ images, descriptions }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNext = () => {
@@ -29,7 +29,7 @@ const ImageSlider = ({ images }) => {
       <button onClick={handleNext} className='button next'><ChevronRight color={'white'} size={15} className='chevr'/></button>
       </div>
       <div className="slide-description">
-
+        {descriptions && descriptions[currentImageIndex]}
       </div>
       </div>
     </div>

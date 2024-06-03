@@ -2,10 +2,11 @@
 
 .contentz {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   position: absolute;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .sectionu {
@@ -17,12 +18,8 @@
   border-radius: 48px;
   background-color: #252422;
   margin-top: 25px;
-  margin-right: 20px;
   padding-left: 20px;
   padding-right: 15px;
-  @include media.phone{
-    margin-right: 20px;
-  }
 
   .language {
     display: flex;
@@ -89,10 +86,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items:flex-end;
   height: 100%;
-  right: 10px;
+  overflow: hidden;
   @include media.phone{
     right: 30%;
   }
@@ -102,7 +98,6 @@
 }
 
 .altpachet {
-  top: -5px;
   right: 10px;
   display: flex;
   flex-direction: column;
@@ -110,12 +105,6 @@
   align-items: center;/* Higher z-index to be on top of other elements */
   position: fixed;
   z-index: 2;
-  @include media.phone{
-    right: 0px;
-  }
-  @include media.tablet{
-    right: -10px;
-  }
 }
 
 .contact {
@@ -132,15 +121,8 @@
   color: white;
   padding: 2px 7px;
   z-index: 9999; /* Higher z-index to be on top of other elements */
-  @include media.phone{
-    right: 10px;
-  }
-  @include media.tablet{
-  }
+  right: 15px;
 
-  @include media.desktop{
-    right: 20px;
-  }
   span {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -166,8 +148,14 @@
 }
 
 
-@media screen and (max-width: 1024px) {
-  .contact{
-    right: 2%;
+.ibtn{
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  &:hover{
+    cursor: pointer;
   }
 }

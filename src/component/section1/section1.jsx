@@ -3,6 +3,7 @@ import { BedDouble, MessageCircleMore } from 'lucide-react';
 import BoxRow from '../risingText/RisingText'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Carousel from '../carousel/Carousel';
 
 function Section1() {
   const text1 = " HOTEL "
@@ -22,6 +23,9 @@ function Section1() {
   return (
     <div className="maini">
         <div className="wrapper">
+        <div className="carus">
+        <Carousel />
+        </div>
         <span className='logo'><img src="./hrlogo.png" alt="" /></span>
         <span className="title"> <BoxRow text={text1}/> </span>
         <span className="title second"><BoxRow text={text2}/></span>

@@ -4,26 +4,24 @@
     display: flex;
     align-items: flex-end;
     width: 100%;
-    margin-top: -20%;
     margin-bottom: 5%;
     height: 80vh;
     overflow: hidden;
-    background-color: #22223b;
-
     @include media.tablet{
-        margin-top: -10%;
+        margin-top: 10%;
         width: 100%;
         display: block;
     }
 
     @include media.phone{
+        margin-top: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .primrand{
+    .primrandd{
         margin-top: -10px;
         font-family: "Sedan SC", sans-serif;
         font-size: 100px;
@@ -37,7 +35,7 @@
 
         @include media.phone{
             font-size: 80px;
-            margin-left: -5%;
+            margin-left:0%;
             transform: none;
         }
     }
@@ -52,7 +50,7 @@
         }
 
         @include media.phone{
-            margin-left: 20%;
+            margin-left: 25%;
             transform: translateX(-48%);
         }
     }
@@ -67,7 +65,7 @@
         }
 
         @include media.phone{
-            margin-left: 20%;
+            margin-left: 25%;
             transform: translateX(-140%);
 
         }

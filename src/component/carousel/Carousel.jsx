@@ -53,7 +53,7 @@ const Carousel = () => {
   };
 
   const boxes = [];
-  const imageSrc = ['img6.jpeg', 'img2.jpeg', 'img5.jpeg', 'img4.jpeg', 'img3.jpeg']; // Replace with your image paths
+  const imageSrc = ['cameracar.jpg', 'receptie.JPG', 'hotel.JPG', 'img4.jpeg', 'img3.jpeg']; // Replace with your image paths
 
   for (let i = 0; i < 5; i++) {
     boxes.push(

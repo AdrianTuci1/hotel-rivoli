@@ -13,7 +13,7 @@ useGSAP(() =>{
       trigger: '.contmap',
       scrub: 0,
       start: '40% bottom',
-      end: '+=700',
+      end: '+=600',
       toggleActions: 'restart pause reverse pause',
     },
     duration: 2,
@@ -40,9 +40,6 @@ useGSAP(() =>{
         <MyMap/>
         </div>
     </div>
-    <div className="panou-c">
-      <ControlPanel />
-        </div>
     </div>
     </>
   )

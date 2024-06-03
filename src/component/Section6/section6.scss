@@ -1,13 +1,11 @@
 @use '../../global.scss' as media;
 
 .pachete{
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .continut{
-    width: 100%;
     overflow-x: hidden;
     height: auto;
     display: flex;
@@ -65,11 +63,11 @@
     overflow: hidden;
     justify-content: center;
     @include media.desktop{
-        height: 150vh;
-        margin-bottom: 10%;
+        height: 140vh;
+        margin-bottom: 0%;
     }
     @include media.tablet{
-        height: 140vh;
+        height: 150vh;
     }
     @include media.phone{
         width: 100%;
@@ -82,30 +80,10 @@
         overflow-x: hidden;
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-left: -100px;
         margin-right: -100px;
     }
 }
 
-.panou-c{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    margin-top: -5%;
-    height: 100%;
 
-    @include media.desktop{
-        display: none;
-    }
-
-    @include media.tablet{
-        margin-top: 20%;
-        margin-bottom: 20%;
-    }
-
-    @include media.phone{
-        margin-bottom: 30%;
-    }
-
-}

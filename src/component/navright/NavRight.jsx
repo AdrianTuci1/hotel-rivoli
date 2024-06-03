@@ -5,6 +5,17 @@ import { useGSAP } from '@gsap/react'
 
 function NavRight() {
 
+    const handleScrollTo = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          gsap.to(window, {
+            duration: 2, // Adjust animation duration as needed
+            ease: "power3.inOut", // Choose your desired easing function
+            scrollTo: { y: targetElement.offsetTop },
+          });
+        }
+      };
+
     useGSAP(() => {
         gsap.from('.sectionu',{
             delay: 0.4,
@@ -34,17 +45,17 @@ function NavRight() {
         </a>
     </div>
     <div className="nav">
-        <a href="/" className="item top">INCEPUT</a>
-        <a href="/" className="item camere">CAMERE</a>
-        <a href="/" className="item locatie">LOCATIE</a>
-        <a href="/" className="item ">CONTACT</a>
+        <button className="item top ibtn" onClick={() => handleScrollTo('section1')}>INCEPUT</button>
+        <button className="item camere ibtn" onClick={() => handleScrollTo('camere')}>CAMERE</button>
+        <button className="item locatie ibtn" onClick={() => handleScrollTo('locatie')}>LOCATIE</button>
+        <button className="item ibtn" onClick={() => handleScrollTo('contact')}>CONTACT</button>
     </div>
     </div>
     <div className="contact">
         <span>PUTEM VORBI</span>
         <a href={import.meta.env.VITE_WHATSAPP_URL} target="_blank" className="whapp zip"><MessageCircleMore width={20}/></a>
         <a href="tel:0791644000" className="tel zip"><Phone width={20}/></a>
-        <a href="mailto:hotel_rivoli@email.com?subject=pre-filled subject" className="mail zip"><Mail width={20}/></a>
+        <a href="mailto:hotel_rivoli@yahoo.com?subject=pre-filled subject" className="mail zip"><Mail width={20}/></a>
     </div>
     </div>
     </div>

@@ -23,7 +23,7 @@ function Section7() {
             in cadrul unui eveniment.
         </span>
     </div>
-    <div className="image-card-container">
+    <div className="image-card-containerr">
     {images.map((image) => (
         <NavCard 
         key={image.src} 

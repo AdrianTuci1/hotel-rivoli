@@ -23,19 +23,19 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className="contact-form">
         <label htmlFor="name">NUME</label>
-        <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <input type="text" id="name" placeholder="Nume" value={name} onChange={(e) => setName(e.target.value)} required />
         <br />
   
         <label htmlFor="email">EMAIL</label>
-        <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input type="email" id="email" placeholder="oaspete@mail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
         <br />
   
         <label htmlFor="subject">SUBIECT</label>
-        <input type="text" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
+        <input type="text" id="subject" placeholder="Rezervare pentru 2 persoane..." value={subject} onChange={(e) => setSubject(e.target.value)} />
         <br />
   
         <label htmlFor="message">MESAJ</label>
-        <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+        <textarea id="message" className="mess" placeholder="Buna ziua, as dori sa stiu daca aveti disponibilitate..." value={message} onChange={(e) => setMessage(e.target.value)} required />
         <br />
   
         <button type="submit">TRIMITE</button>

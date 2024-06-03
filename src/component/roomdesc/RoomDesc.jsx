@@ -89,7 +89,7 @@ export const RoomDesc2 = () => {
                   <ul className='dsc'>
                       <li>PAT MATRIMONIAL</li>
                       <li>BIROU</li>
-                      <li>BALCON</li>
+                      <li>CANAPEA EXTENSIBILA</li>
                       <li>2 SMART TV</li>
                   </ul>
               </div>

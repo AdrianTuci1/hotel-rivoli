@@ -10,7 +10,7 @@ function Section2() {
             De aici poti explora frumusetea orasului si simti ca acasa. <br />
 
             Ai tot ce iti trebuie pentru o sedere placuta. Camere spatioase,
-            mobilier modern, baie confortabil. <br />
+            mobilier modern, baie confortabila. <br />
 
             Avem WiFi de mare viteza.
         </p>

@@ -10,7 +10,7 @@ function Footer() {
     const items = document.querySelectorAll('.item')
 
     useGSAP(() => {
-        gsap.from('.primrand', {
+        gsap.from('.primrandd', {
             scrollTrigger:{
                 trigger: ".stickyy",
                 pin: true,
@@ -19,30 +19,16 @@ function Footer() {
                 end: 'bottom bottom',
                 toggleActions: "restart pause reverse pause"
             },
-            y: window.innerHeight * -0.18,
+            y: window.innerHeight * -0.30,
             duration: 2,
-            ease: "back.inOut",
-        })
-
-        gsap.from('.foocontainer', {
-            scrollTrigger:{
-                trigger: ".stickyy",
-                pin: true,
-                scrub: 2,
-                start: 'bottom bottom',
-                end: 'bottom bottom',
-                toggleActions: "restart pause reverse pause"
-            },
-            y: window.innerHeight * -0.14,
-            duration: 4,
             ease: "power1.in",
         })
-    }, [])
+    });
 
   return (
     <div className='foocontainer'>
         <div className="stickyy">
-        <span className="primrand">
+        <span className="primrandd">
             RIVOLI
         </span>
         <span className="doirand itemm">        
@@ -51,8 +37,8 @@ function Footer() {
                 <li>HOTEL RIVOLI</li>
                 <li>STRADA POSTAVARUL NR 98A</li>
                 <li>BUCURESTI, SECTOR 3</li>
-                <li>hotel-rivoli@yahoo.com</li>
-                <li>TEL: 0000000000</li>
+                <li>hotel_rivoli@yahoo.com</li>
+                <li>TEL: 0791 644 000</li>
             </ul>
         </span>
         <span className="treirand itemm" >

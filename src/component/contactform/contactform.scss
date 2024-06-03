@@ -36,6 +36,7 @@
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-bottom: 15px;
+    text-align: center;
   }
   
   .contact-form textarea {
@@ -49,4 +50,8 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+  }
+
+  .contact-form .mess{
+    resize: none;
   }
