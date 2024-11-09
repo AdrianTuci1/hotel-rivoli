@@ -1,5 +1,6 @@
 {
   "name": "hotel-rivoli",
+  "homepage": "http://hotel-rivoli.ro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,16 +13,21 @@
     "preview": "vite preview --port 8080"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@gsap/react": "^2.1.1",
     "dotenv": "^16.4.5",
     "gsap": "^3.12.5",
+    "i18next": "^23.11.5",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.378.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.2",
     "react-intersection-observer": "^9.10.2",
     "react-leaflet": "^4.2.1",
+    "react-redux": "^9.1.2",
     "react-spinners": "^0.13.8",
+    "redux": "^5.0.1",
     "serve": "^14.2.3"
   },
   "devDependencies": {

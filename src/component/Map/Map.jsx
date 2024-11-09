@@ -14,7 +14,7 @@ function MyMap() {
 
   return(
     <div className="map">
-    <MapContainer center={position} zoom={14} zoomControl={false} dragging={false} scrollWheelZoom={false} style={{height:'660px', width:'1300px', overflow: 'hidden'}}>
+    <MapContainer center={position} zoom={14} zoomControl={false} dragging={false} scrollWheelZoom={false} style={{height:'2200px', width:'2200px', overflow: 'hidden'}}>
       <TileLayer
         url= {import.meta.env.VITE_MAP_KEY}
       />

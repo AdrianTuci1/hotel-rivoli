@@ -1,25 +1,29 @@
 import React from 'react'
 import './roomdesc.scss'
+import i18n from '../../translation';
+import { useTranslation } from 'react-i18next';
+
 
 export const RoomDesc =() => {
+    const { t } = useTranslation();
   return (
     <div className='roomdesc'>
         <div className="rd-1">
             <div className="bedroom">
-                <span className="ti">DORMITOR</span>
+                <span className="ti">{t('dormitor')}</span>
                 <ul className='dsc'>
-                    <li>PAT MATRIMONIAL</li>
-                    <li>BIROU</li>
-                    <li>TERASA</li>
+                    <li>{t('pat matrimonial')}</li>
+                    <li>{t('birou')}</li>
+                    <li>{t('terasa')}</li>
                     <li>SMART TV</li>
-                    <li>CANAPEA EXTENSIBILA</li>
+                    <li>{t('canapea extensibila')}</li>
                 </ul>
             </div>
             <div className="bathroom">
-                <span className="ti">BAIE</span>
+                <span className="ti">{t('baie')}</span>
                 <ul className='dsc'>
-                    <li>DUS</li>
-                    <li>USCATOR PENTRU PAR</li>
+                    <li>{t('dus')}</li>
+                    <li>{t('uscator')}</li>
                 </ul>
             </div>
         </div>
@@ -27,77 +31,79 @@ export const RoomDesc =() => {
             <div className="amenities">
                 <span className="ti">AMENITIES</span>
                 <ul>
-                    <li>BIROU</li>
-                    <li>USCATOR PENTRU PAR</li>
-                    <li>INTERNET DE MARE VITEZA</li>
-                    <li>AER CONDITIONAT</li>
+                    <li>{t('birou')}</li>
+                    <li>{t('uscator')}</li>
+                    <li>{t('internet')}</li>
+                    <li>{t('aer conditionat')}</li>
                 </ul>
             </div>
         </div>
         <div className="rd-3">
-            <span className="desc">36M² - 2 SAU 3 PERSOANE - DE LA 300 LEI</span>
+            <span className="desc">32M² - {t('marime1')}</span>
         </div>
     </div>
   )
 };
 
 export const RoomDesc2 = () => {
+    const { t } = useTranslation();
     return (
       <div className='roomdesc'>
           <div className="rd-1">
               <div className="bedroom">
-                  <span className="ti">DORMITOR</span>
+                  <span className="ti">{t('dormitor')}</span>
                   <ul className='dsc'>
-                      <li>PAT MATRIMONIAL</li>
-                      <li>BIROU</li>
+                      <li>{t('pat matrimonial')}</li>
+                      <li>{t('birou')}</li>
                       <li>SMART TV</li>
-                      <li>BALCON</li>
+                      <li>{t('balcon')}</li>
                   </ul>
               </div>
               <div className="bathroom">
-                  <span className="ti">BAIE</span>
+                  <span className="ti">{t('baie')}</span>
                   <ul className='dsc'>
-                      <li>DUS</li>
-                      <li>USCATOR PENTRU PAR</li>
+                      <li>{t('dus')}</li>
+                      <li>{t('uscator')}</li>
                   </ul>
               </div>
           </div>
           <div className="rd-2">
-              <div className="amenities">
+              <div className="amenities em">
                   <span className="ti">AMENITIES</span>
                   <ul>
-                      <li>BIROU</li>
-                      <li>USCATOR PENTRU PAR</li>
-                      <li>INTERNET DE MARE VITEZA</li>
-                      <li>AER CONDITIONAT</li>
+                      <li>{t('birou')}</li>
+                      <li>{t('uscator')}</li>
+                      <li>{t('internet')}</li>
+                      <li>{t('aer conditionat')}</li>
                   </ul>
               </div>
           </div>
           <div className="rd-3">
-              <span className="desc">32M² - 2 SAU 3 PERSOANE - DE LA 300 LEI</span>
+              <span className="desc">30M² - {t('marime2')}</span>
           </div>
       </div>
     )
   }
 
   export const RoomDesc3 = () => {
+    const { t } = useTranslation();
     return (
       <div className='roomdesc'>
           <div className="rd-1">
               <div className="bedroom">
-                  <span className="ti">DORMITOR</span>
+                  <span className="ti">{t('dormitor')}</span>
                   <ul className='dsc'>
-                      <li>PAT MATRIMONIAL</li>
-                      <li>BIROU</li>
-                      <li>CANAPEA EXTENSIBILA</li>
+                      <li>{t('pat matrimonial')}</li>
+                      <li>{t('birou')}</li>
+                      <li>{t('canapea extensibila')}</li>
                       <li>2 SMART TV</li>
                   </ul>
               </div>
               <div className="bathroom">
-                  <span className="ti">BAIE</span>
+                  <span className="ti">{t('baie')}</span>
                   <ul className='dsc'>
-                      <li>DUS</li>
-                      <li>USCATOR PENTRU PAR</li>
+                      <li>{t('dus')}</li>
+                      <li>{t('uscator')}</li>
                   </ul>
               </div>
           </div>
@@ -105,15 +111,15 @@ export const RoomDesc2 = () => {
               <div className="amenities">
                   <span className="ti">AMENITIES</span>
                   <ul>
-                      <li>BIROU</li>
-                      <li>USCATOR PENTRU PAR</li>
-                      <li>INTERNET DE MARE VITEZA</li>
-                      <li>AER CONDITIONAT</li>
+                      <li>{t('birou')}</li>
+                      <li>{t('uscator')}</li>
+                      <li>{t('internet')}</li>
+                      <li>{t('aer conditionat')}</li>
                   </ul>
               </div>
           </div>
           <div className="rd-3">
-              <span className="desc">43M² - 2 SAU 3 PERSOANE - DE LA 300 LEI</span>
+              <span className="desc">42M² - {t('marime3')}</span>
           </div>
       </div>
     )

@@ -1,73 +1,74 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
-import './boxScroll.scss'
+import './boxScroll.scss';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const BoxScroll = () => {
+  const staricon = 'staro.png';
+
   const containerRef = useRef(null);
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
 
-  gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    // Box 2 Animation with ScrollTrigger (unchanged)
+    // Center Star Animation (Scale and Rotate)
     gsap.to(box2Ref.current, {
       scrollTrigger: {
-        trigger: ".full-viewport", // Trigger on container element
-        scrub: 1, // Enable scrubbing based on scroll position
-        start: "center center", // Start animation at container center
-        end: "+=800", // End animation 1000px past the start
-        toggleActions: "restart pause reverse pause", // Animation controls
+        trigger: containerRef.current,
+        scrub: 0,
+        start: "center center", // Animation starts when section is centered
+        end: "+=800",
+        toggleActions: "restart pause reverse pause",
       },
-      scale: 20, // Scale to 2x size
-      rotate: 260,
-      duration: 3, // Animation duration in seconds
-      ease: "power1.in", // Ease function (adjust as needed)
+      scale: 32, // Scale up significantly to cover the screen
+      rotate: 360,
+      duration: 1,
+      ease: "power1.inOut",
+      onUpdate: function () {
+        containerRef.current.style.backgroundColor = `rgba(255, 215, 0, ${this.progress})`; // Transition to star color
+      }
     });
 
-    // Box 1 Movement with ScrollTrigger
+    // Left Star Movement
     gsap.to(box1Ref.current, {
       scrollTrigger: {
-        trigger: containerRef.current, // Trigger on main container
-        scrub: true, // Enable scrubbing based on scroll position
-        start: "middle middle", // Start animation at container top
-        end: "+=1000", // End animation at container bottom
+        trigger: containerRef.current,
+        scrub: true,
+        start: "center center",
+        end: "+=800",
       },
-      x: window.innerWidth * -1.3, // Move to left half of viewport
-      duration: 2, // Animation duration in seconds
-      ease: "power1.in", // Ease function (adjust as needed)
+      x: window.innerWidth * -1.5, // Move far to the left
+      duration: 2,
+      ease: "power1.in",
     });
 
-    // Box 3 Movement with ScrollTrigger
+    // Right Star Movement
     gsap.to(box3Ref.current, {
       scrollTrigger: {
-        trigger: containerRef.current, // Trigger on main container
-        scrub: true, // Enable scrubbing based on scroll position
-        start: "middle middle", // Start animation at container top
-        end: "+=1000", // End animation at container bottom
+        trigger: containerRef.current,
+        scrub: true,
+        start: "center center",
+        end: "+=800",
       },
-      x: window.innerWidth * 1.3, // Move to right half of viewport
-      duration: 2, // Animation duration in seconds
-      ease: "power1.in", // Ease function (adjust as needed)
+      x: window.innerWidth * 1.5, // Move far to the right
+      duration: 2,
+      ease: "power1.in",
     });
   }, []);
 
   return (
     <div ref={containerRef} className="full-viewport">
-      <div ref={box1Ref} className="boxz"><img src="./star.png" alt="" /></div>
+      <div ref={box1Ref} className="boxz"><img src={staricon} alt="Star Icon" /></div>
       <div ref={box2Ref} className="boxz center">
-        <img src="./star.png" alt="" />
-        </div>
-      <div ref={box3Ref} className="boxz"><img src="star.png" alt="" /></div>
+        <img src={staricon} alt="Star Icon" />
+      </div>
+      <div ref={box3Ref} className="boxz"><img src={staricon} alt="Star Icon" /></div>
     </div>
   );
 };
 
 export default BoxScroll;
-
-
-
-

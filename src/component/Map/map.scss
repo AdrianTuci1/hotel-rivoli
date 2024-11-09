@@ -1,5 +1,11 @@
+
+
 .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
-    width: 1600px;
-    height: 660px;
+    width: 2200px;
+    height: 3000px;
+    min-height: 2200px;
 }

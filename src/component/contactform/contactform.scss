@@ -32,11 +32,11 @@
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
   }
   
   .contact-form textarea {
@@ -50,8 +50,13 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    height: 15px;
   }
 
   .contact-form .mess{
     resize: none;
+  }
+
+  .subm:hover{
+    font-size: 12px;
   }

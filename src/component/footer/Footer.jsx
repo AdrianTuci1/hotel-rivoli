@@ -1,56 +1,72 @@
-import React from 'react'
-import './footer.scss'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React, { useRef } from 'react';
+import './footer.scss';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Footer() {
-    const items = document.querySelectorAll('.item')
+  const footerContainerRef = useRef(null);
+  const brandBoxRef = useRef(null);
+  const contactBoxRef = useRef(null);
+  const linksBoxRef = useRef(null);
 
-    useGSAP(() => {
-        gsap.from('.primrandd', {
-            scrollTrigger:{
-                trigger: ".stickyy",
-                pin: true,
-                scrub: 2,
-                start: '60% bottom',
-                end: 'bottom bottom',
-                toggleActions: "restart pause reverse pause"
-            },
-            y: window.innerHeight * -0.30,
-            duration: 2,
-            ease: "power1.in",
-        })
+  useGSAP(() => {
+    gsap.from(brandBoxRef.current, {
+      scrollTrigger: {
+        trigger: footerContainerRef.current,
+        start: 'top bottom',
+        end: 'center center',
+        scrub: 1,
+      },
+      y: -300,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out',
     });
 
+    gsap.from([contactBoxRef.current, linksBoxRef.current], {
+      scrollTrigger: {
+        trigger: footerContainerRef.current,
+        start: 'top bottom',
+        end: 'center center',
+        scrub: 1,
+      },
+      y: 300,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out',
+      stagger: 0.2,
+    });
+  });
+
   return (
-    <div className='foocontainer'>
-        <div className="stickyy">
-        <span className="primrandd">
-            RIVOLI
-        </span>
-        <span className="doirand itemm">        
-            <ul className='nobullets'>
-                <li className='d'>IMPRINT</li>
-                <li>HOTEL RIVOLI</li>
-                <li>STRADA POSTAVARUL NR 98A</li>
-                <li>BUCURESTI, SECTOR 3</li>
-                <li>hotel_rivoli@yahoo.com</li>
-                <li>TEL: 0791 644 000</li>
-            </ul>
-        </span>
-        <span className="treirand itemm" >
-            <ul className='nobullets'>
-                <li className='d'>LINKS</li>
-                <li>CONDITIONS</li>
-                <li>WEBSITE BY</li>
-            </ul>
-        </span>
+    <div className="footer-container" ref={footerContainerRef}>
+      <div className="footer-content">
+        <div className="footer-box brand-box" ref={brandBoxRef}>
+          <span className="brand-title">RIVOLI</span>
         </div>
+        <div className="footer-box contact-box" ref={contactBoxRef}>
+          <ul className="no-bullets">
+            <li className="box-header">IMPRINT</li>
+            <li>HOTEL RIVOLI</li>
+            <li>STRADA POSTAVARUL NR 98A</li>
+            <li>BUCURESTI, SECTOR 3</li>
+            <li>hotel_rivoli@yahoo.com</li>
+            <li>TEL: 0791 644 000</li>
+          </ul>
+        </div>
+        <div className="footer-box links-box" ref={linksBoxRef}>
+          <ul className="no-bullets">
+            <li className="box-header">LINKS</li>
+            <li>CONDITIONS</li>
+            <li>WEBSITE BY</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

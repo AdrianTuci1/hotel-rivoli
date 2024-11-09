@@ -1,89 +1,88 @@
 @use '../../global.scss' as media;
 
-.pachete{
-    display: flex;
+.pachete {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #f2e9e4;
+  overflow-x: hidden;
+}
+
+.continut {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-block: 50px;
+  margin-left: 30px;
+  color: #692f60;
+  gap: 25px;
+  text-align: center;
+
+  @include media.phone {
     flex-direction: column;
-}
+    margin-left: 25px;
+  }
 
-.continut{
-    overflow-x: hidden;
-    height: auto;
-    display: flex;
-    margin-left: 30px;
-    color: #692f60;
-    gap: 25px;
-    overflow-y: hidden;
+  .locatie {
+    font-family: 'Sedan SC', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
 
     @include media.phone{
-        display: flex;
-        flex-direction: column;
-        margin-left: 25px;
-        height: auto;
+      font-size: 70px;
     }
+  }
 
-    @include media.tablet{
-        margin-left: 25px;
-        height: auto;
+  .descriere {
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: left;
+    max-width: 600px;
+
+    @include media.phone {
+      font-size: 14px;
     }
-
-    .locatie{
-        font-family: 'Sedan SC', sans-serif;
-        font-size: 90px;
-        font-weight: 400;
-        flex:1;
-
-        @include media.phone{
-            margin-left: -7px;
-            height: auto;
-            font-size: 60px;
-        }
-
-        @include media.tablet{
-            margin-left: -7px;
-            height: auto;
-        }
-    }
-    .descriere{
-        flex:1;
-        margin-top: 16px;
-        margin-right: 50px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        font-size: 16px;
-        text-align: left;        
-    }
+  }
 }
 
-.mapz{
-    margin-top: 5%;
-    width: 100%;
-    height: 150vh;
-    display: flex;
-    overflow-x: hidden;
-    overflow: hidden;
-    justify-content: center;
-    @include media.desktop{
-        height: 140vh;
-        margin-bottom: 0%;
-    }
-    @include media.tablet{
-        height: 150vh;
-    }
-    @include media.phone{
-        width: 100%;
-        height: 150vh;
-    }
-    .contmap{
-        height: 660px;
-        width: 90vw;
-        border-radius: 50px;
-        overflow-x: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100px;
-        margin-right: -100px;
-    }
+.mapz {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contmap {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 20px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
+
+.control-panel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 
+@media (max-width: 1023px) {
+    .control-panel{
+      display: none;
+    }
+}

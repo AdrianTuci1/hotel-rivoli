@@ -1,9 +1,11 @@
 import React from 'react'
 import './section7.scss'
 import NavCard from '../navCard/NavCard'
-
+import i18n from '../../translation';
+import { useTranslation } from 'react-i18next';
 
 function Section7() {
+    const { t } = useTranslation();
 
     const images = [
         { src: './metrou.JPG', description: 'METROU 1 DECEMBRIE 1918 - 700M', link:`${import.meta.env.VITE_MAP_METROU}` },
@@ -16,11 +18,7 @@ function Section7() {
     <div className='continut7'>
         <div className="bxz1"></div>
         <span className="continut3">
-            In apropiere sunt 2 centre comerciale si metroul la 5 minute distanta. 
-            Poti ajunge rapid in orice parte a orasului.
-            In apropiere este Parcul Titan si centrul comercial ParkLake.
-            Hotelul nostru este alegerea ideala si daca veniti
-            in cadrul unui eveniment.
+            {t('section7')}
         </span>
     </div>
     <div className="image-card-containerr">

@@ -1,18 +1,15 @@
 import React from 'react'
 import './section2.scss'
+import i18n from '../../translation';
+import { useTranslation } from 'react-i18next';
 
 function Section2() {
+  const { t } = useTranslation();
   return (
     <div className='sec2'>
         <span>RIVOLI</span>
         <p>
-            Bun venit - hotelul nostru ofera camere moderne in Bucuresti!
-            De aici poti explora frumusetea orasului si simti ca acasa. <br />
-
-            Ai tot ce iti trebuie pentru o sedere placuta. Camere spatioase,
-            mobilier modern, baie confortabila. <br />
-
-            Avem WiFi de mare viteza.
+          {t('bunvenit')}
         </p>
     </div>
   )

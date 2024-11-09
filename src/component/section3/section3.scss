@@ -4,10 +4,11 @@
   position: sticky;
   top: 0; /* Sticks to the top of the viewport */
   height: 100vh; /* Ensures full viewport height */
-  overflow-y: scroll;
 }
 
 .texts{
+  padding-block-start: 100px;
+  padding-block-end: 300px;
   font-family: 'Sedan SC', sans-serif;
   font-weight: 300;
   display: flex;
@@ -25,6 +26,6 @@
 
   @include media.phone{
     margin-top: 75%;
-    font-size: 32px;
+    font-size: 27px;
   }
 }

@@ -1,47 +1,42 @@
+.mainp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: visible;
+  position: relative;
+}
+
 .circle-container {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    display: flex; /* Added for box centering */
-    align-items: center; /* Added for box centering */
-    justify-content: center;
-    z-index: 0;
-  }
-  
-  .box {
-    position: absolute;
-    transform: rotate(45deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content; 
-    height: fit-content; 
-    background-color: white;
-    border-radius: 10%;
-    overflow: hidden; /* Clip overflowing parts of the image */
-    object-fit: cover; /* Resize image to cover the entire box */
-    margin: 0 auto; /* Added for centering within container */
-  }
-
-  .image-wrapper {
-    transform: none; /* Center and prevent tilt */
-  }
-
-  .image-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-  }
-
-.mainp{
-  margin-top: 10%;
-  padding-bottom: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // Center the circle container within .carus
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+}
+
+.box {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10%;
   overflow: hidden;
-  z-index: 0;
+  object-fit: cover;
+}
+
+.image-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
