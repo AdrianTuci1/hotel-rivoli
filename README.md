@@ -1,8 +1,19 @@
-# React + Vite
+Hotel Rivoli
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Responsive Design: Optimized for both desktop and mobile views.
+Multi-language Support: Content available in both English and Romanian.
+SEO Optimization: Uses structured data and meta tags to enhance search engine visibility.
+Booking Support: Direct booking links to external booking platforms.
+Dynamic Content: Supports dynamic language switching and content customization.
+Accessibility: Designed with accessibility best practices in mind.
 
-Currently, two official plugins are available:
+🛠 Technologies
+Frontend: HTML, SCSS, JavaScript
+Icons and Fonts: Google Fonts, custom favicon and icons
+JavaScript Libraries:
+GSAP for animations
+i18next for language translation
+SEO and Structured Data: JSON-LD for schema markup, optimized meta tags
+Build Tools: Node.js, Webpack/Vite (specify based on your setup)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
