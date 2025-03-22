@@ -1,33 +1,47 @@
-Hotel Rivoli
+# 🏨 Hotel Rivoli
 
-✨ Features
+A modern, responsive website for Hotel Rivoli, designed to deliver a seamless experience across devices, languages, and platforms.
 
-Responsive Design: Optimized for both desktop and mobile views.
+---
 
-Multi-language Support: Content available in both English and Romanian.
+## ✨ Features
 
-SEO Optimization: Uses structured data and meta tags to enhance search engine visibility.
+- **Responsive Design**  
+  Fully optimized for both desktop and mobile devices to ensure a consistent user experience.
 
-Booking Support: Direct booking links to external booking platforms.
+- **Multi-language Support**  
+  Available in **English** and **Romanian**, with real-time language switching.
 
-Dynamic Content: Supports dynamic language switching and content customization.
+- **SEO Optimization**  
+  Enhanced visibility through structured data, SEO-friendly meta tags, and semantic markup.
 
-Accessibility: Designed with accessibility best practices in mind.
+- **Booking Integration**  
+  Direct links to external booking platforms for easy and fast reservations.
 
+- **Dynamic Content**  
+  Supports real-time updates, language changes, and personalized content rendering.
 
-🛠 Technologies
+- **Accessibility Focused**  
+  Built with WCAG best practices to provide an inclusive experience for all users.
 
-Frontend: HTML, SCSS, JavaScript
+---
 
-Icons and Fonts: Google Fonts, custom favicon and icons
+## 🛠 Technologies Used
 
-JavaScript Libraries:
+### Frontend
+- **Languages:** HTML, SCSS, JavaScript
+- **Fonts & Icons:** Google Fonts, custom favicons, and icons
 
-GSAP for animations
+### JavaScript Libraries
+- **GSAP** — Smooth and engaging animations  
+- **i18next** — Seamless language translation and localization
 
-i18next for language translation
+### SEO & Structured Data
+- **JSON-LD** — Schema markup for improved SEO performance  
+- **Optimized Meta Tags** — Title, description, and social sharing enhancements
 
-SEO and Structured Data: JSON-LD for schema markup, optimized meta tags
+### Build Tools
+- **Environment:** Node.js  
+- **Bundler:** Webpack or Vite (customize based on your project)
 
-Build Tools: Node.js, Webpack/Vite (specify based on your setup)
-
+---
