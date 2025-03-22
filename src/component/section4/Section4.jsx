@@ -17,31 +17,37 @@ function Section4() {
   const desc3 = ['FIRST FLOOR', 'STAIRS', 'BEDROOM', 'BATHROOM']
 
   return (
-    <div className='section-4'>
-      <div className="first-option optionm">
-      <h2><Reveallx sentence={t('camdubla')} /></h2>
-      <h4>{t('dubladesc')}</h4>
-      <RoomDesc2 />
-      <ImageSlider images={imageURL} descriptions={desc}/>
-      </div>
-      <div className="second-option optionm">
-      <h2><Reveallx sentence={t('deluxe')}/></h2>
-      <h2><Reveallx sentence={t('room')}/></h2>
-      <h4>
-        {t('deluxedesc')}
-      </h4>
-      <RoomDesc />
-      <ImageSlider images={imageURL2} descriptions={desc2}/>
-      </div>
-      <div className="third-option optionm">
-      <h2><Reveallx sentence={t('apartament')} /></h2>
-      <h4>
-        {t('apartamentdesc')}
-        </h4>
-      <RoomDesc3 />
-      <ImageSlider images={imageURL3} descriptions={desc3}/>
-      </div>
-    </div>
+    <section id="camere" className='section-4'>
+      <article className="first-option optionm">
+        <header>
+          <h2><Reveallx sentence={t('camdubla')} /></h2>
+          <h3 className='desc-ca'>{t('dubladesc')}</h3>
+        </header>
+        <RoomDesc2 />
+        <ImageSlider images={imageURL} descriptions={desc}/>
+      </article>
+      <article className="second-option optionm">
+        <header>
+          <h2><Reveallx sentence={t('deluxe')}/></h2>
+          <h2><Reveallx sentence={t('room')}/></h2>
+          <h3 className='desc-ca'>
+            {t('deluxedesc')}
+          </h3>
+        </header>
+        <RoomDesc />
+        <ImageSlider images={imageURL2} descriptions={desc2}/>
+      </article>
+      <article className="third-option optionm">
+        <header>
+          <h2><Reveallx sentence={t('apartament')} /></h2>
+          <h3 className='desc-ca'>
+            {t('apartamentdesc')}
+          </h3>
+        </header>
+        <RoomDesc3 />
+        <ImageSlider images={imageURL3} descriptions={desc3}/>
+      </article>
+    </section>
   )
 }
 

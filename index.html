@@ -1,18 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
   <head>
     <!-- Character Set and Mobile Viewport Settings -->
     <meta charset="UTF-8" />
     <meta name="geo.position" content="44.41718; 26.17410">
     <meta name="geo.placename" content="Hotel Rivoli">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="title" content="Hotel Rivoli" />
-    <meta name="description" content="In Bucharest, experience a blend of comfort and style at Hotel Rivoli. Modernly furnished rooms and a convenient location, just 10 minutes by car from the city center, make it ideal for both business trips and vacations." />
-    <meta name="keywords" content="Hotel Rivoli, Bucharest, hotel, business trip, vacation, modern rooms, city center, Romania" />
+    <meta name="title" content="Hotel Rivoli - Cazare Modernă în București" />
+    <meta name="description" content="Hotel Rivoli București oferă camere moderne și confortabile la prețuri accesibile. La doar 10 minute cu mașina de centrul orașului, suntem alegerea ideală pentru călătorii de afaceri și vacanțe." />
+    <meta name="keywords" content="Hotel Rivoli, București, cazare, hotel, afaceri, vacanță, camere moderne, centrul orașului, România, Sector 3, Titan, Parcul Titan, cazare in bucuresti, hoteluri bucuresti, hoteluri sector 3, hoteluri sector 4, cazare titan, hoteluri titan, hala laminor, arena nationala" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.hotel-rivoli.ro" />
+    
+    <!-- Preîncarcă imaginile caruselului -->
+    <link rel="preload" href="./cameracar.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="./receptie.jpeg" as="image" fetchpriority="high" />
+    <link rel="preload" href="./hotel.JPG" as="image" fetchpriority="high" />
+    <link rel="preload" href="./img4.jpeg" as="image" fetchpriority="high" />
+    <link rel="preload" href="./dubla.jpg" as="image" fetchpriority="high" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hotel-rivoli.ro" />
+    <meta property="og:title" content="Hotel Rivoli - Cazare Modernă în București" />
+    <meta property="og:description" content="Hotel Rivoli București oferă camere moderne și confortabile la prețuri accesibile. La doar 15 minute cu mașina de centrul orașului." />
+    <meta property="og:image" content="https://www.hotel-rivoli.ro/hotel.JPG" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.hotel-rivoli.ro" />
+    <meta name="twitter:title" content="Hotel Rivoli - Cazare Modernă în București" />
+    <meta name="twitter:description" content="Hotel Rivoli București oferă camere moderne și confortabile la prețuri accesibile. La doar 15 minute cu mașina de centrul orașului." />
+    <meta name="twitter:image" content="https://www.hotel-rivoli.ro/hotel.JPG" />
 
-    <title>Hotel Rivoli</title>
+    <title>Hotel Rivoli - Cazare Modernă în București</title>
 
     <!-- Icons for All Devices and Platforms -->
     <link rel="icon" href="./hrround.png" sizes="32x32" />
@@ -40,6 +63,53 @@
     <div id="root"></div>
     <!-- Load Main JavaScript File with Defer -->
     <script type="module" src="/src/main.jsx" defer></script>
+    
+    <!-- Script pentru preîncărcarea imaginilor carousel -->
+    <script>
+      // Preîncarcă imaginile carousel în timpul afișării preloader-ului
+      window.addEventListener('DOMContentLoaded', function() {
+        const carouselImages = ['cameracar.jpg', 'receptie.jpeg', 'hotel.JPG', 'img4.jpeg', 'dubla.jpg'];
+        carouselImages.forEach(src => {
+          const img = new Image();
+          img.src = src;
+        });
+      });
+    </script>
+    
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Hotel Rivoli",
+        "url": "https://www.hotel-rivoli.ro",
+        "logo": "https://www.hotel-rivoli.ro/hrlogo.png",
+        "image": "https://www.hotel-rivoli.ro/hotel.JPG",
+        "description": "Hotel Rivoli București oferă camere moderne și confortabile la prețuri accesibile. La doar 10 minute cu mașina de centrul orașului.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Postavarul nr 98A",
+          "addressLocality": "București",
+          "addressRegion": "Sector 3",
+          "postalCode": "",
+          "addressCountry": "RO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.41718",
+          "longitude": "26.17410"
+        },
+        "telephone": "+40791644000",
+        "email": "hotel_rivoli@yahoo.com",
+        "priceRange": "270 - 450 LEI",
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free WiFi" },
+          { "@type": "LocationFeatureSpecification", "name": "Air Conditioning" },
+          { "@type": "LocationFeatureSpecification", "name": "Parking" },
+          { "@type": "LocationFeatureSpecification", "name": "24/7 Reception" }
+        ]
+      }
+    </script>
   </body>
 </html>
 

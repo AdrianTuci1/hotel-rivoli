@@ -10,14 +10,16 @@
 
 .circle-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); // Center the circle container within .carus
+  top: 51%;
+  left: 49%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-origin: center center;
+  will-change: transform;
 }
 
 .box {
@@ -27,10 +29,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10%;
   overflow: hidden;
-  object-fit: cover;
+  transform-origin: center center;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10%;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 .image-box {
@@ -39,4 +62,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 10%;
+    mask: 
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 12px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    position: relative;
+  }
 }

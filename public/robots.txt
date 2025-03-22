@@ -1,0 +1,14 @@
+# robots.txt pentru Hotel Rivoli
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.hotel-rivoli.ro/sitemap/sitemap.xml
+
+# Disallow admin areas if they exist
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# Optimizare pentru crawling
+Crawl-delay: 10 

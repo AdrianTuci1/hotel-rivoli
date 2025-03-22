@@ -9,13 +9,18 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+
+    @media (max-width: 800px) {
+        padding: 0 15px;
+    }
+
   .optionm{
         text-align: center;
         margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 370px;
+        width: 100%;
         max-width: 620px;
 
         @include media.tablet{
@@ -26,7 +31,7 @@
             align-items: center;
         }
         @include media.phone{
-            width: 400px;
+            width: 100%;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -42,8 +47,24 @@
             font-size: 16px;
             margin-left: 5px;
             margin-right: 5px;
-
         }
     }
+}
+
+
+.desc-ca{
+  font-weight: 100;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .optionm {
+    .room-desc,
+    .room-desc2,
+    .room-desc3,
+    .slider-container {
+      padding: 0;
+    }
+  }
 }
 

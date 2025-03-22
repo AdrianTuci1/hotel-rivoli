@@ -5,7 +5,7 @@ const resources = {
   ro: { 
     translation: {
       "ro": "EN",
-      "bun venit": "Stai cu prietenii! Hotelul nostru ofera camere moderne la un pret accesibil. Stai la noi si bucura-te de o vizita frumoasa in Bucuresti!",
+      "bun venit": "Stai cu prietenii! Hotelul nostru ofera camere moderne la un pret accesibil. Stai la noi si bucura-te de o vizita placuta in Bucuresti!",
       "inceput": "INCEPUT",
       "locatie": "LOCATIE",
       "camere": "CAMERE",

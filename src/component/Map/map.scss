@@ -1,6 +1,4 @@
-
-
-.map{
+.map {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,4 +6,16 @@
     width: 2200px;
     height: 3000px;
     min-height: 2200px;
+}
+
+
+
+// Media query pentru dispozitive mobile
+@media (max-width: 768px) {
+    .map {
+        .map-control-panel {
+            bottom: 5%;
+            max-width: 95vw;
+        }
+    }
 }

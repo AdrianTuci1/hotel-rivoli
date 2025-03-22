@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import Loaderz from './loader/Loader';
 import NavRight from './component/navright/NavRight';
+import CustomCursor from './component/CustomCursor';
 
 const Section1 = lazy(() => import('./component/section1/section1'));
 const Section2 = lazy(() => import('./component/section2/Section2'));
@@ -43,47 +44,50 @@ function App() {
 
   return (
     <>
-      {loading ? (
-        <div className="cv-1">
-          <Loaderz />
-        </div>
-      ) : (
-        <div className="bdy">
-          <NavRight onNavClick={handleScrollToSection} />
-            <div id="section1">
-              <Section1 />
-            </div>
-            <div id="section2">
-              <Section2 />
-            </div>
-            <div id="section3">
-              <Section3 />
-            </div>
-            <div id="camere">
-              <Section4 />
-            </div>
-            <div id="section5">
-              <Section5 />
-            </div>
-            <div id="locatie">
-              <Section6 />
-            </div>
-            <div id="panel" className='panel'>
-              <ControlPanel />
-            </div>
-            <div id="section7">
-              <Section7 />
-            </div>
-            <div id="contact">
-              <Section8 />
-            </div>
-            <div className="footer">
-            <Footer />
-            </div>
-        </div>
-      )}
-    </>
-  );
+      <CustomCursor />
+      <div className="root-container">
+        {loading ? (
+          <div className="cv-1">
+            <Loaderz />
+          </div>
+        ) : (
+          <div className="bdy">
+            <NavRight onNavClick={handleScrollToSection} />
+              <div id="section1">
+                <Section1 />
+              </div>
+              <div id="section2">
+                <Section2 />
+              </div>
+              <div id="section3">
+                <Section3 />
+              </div>
+              <div id="camere">
+                <Section4 />
+              </div>
+              <div id="section5">
+                <Section5 />
+              </div>
+              <div id="locatie">
+                <Section6 />
+              </div>
+              <div id="panel" className='panel'>
+                <ControlPanel />
+              </div>
+              <div id="section7">
+                <Section7 />
+              </div>
+              <div id="contact">
+                <Section8 />
+              </div>
+              <div className="footer">
+              <Footer />
+              </div>
+          </div>
+        )}
+       </div>
+      </>
+    );
 }
 
 export default App;

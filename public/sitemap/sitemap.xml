@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Pagina principală -->
+  <url>
+    <loc>https://www.hotel-rivoli.ro/</loc>
+    <lastmod>2023-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-rivoli.ro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-rivoli.ro/" />
+  </url>
+  
+  <!-- Secțiuni principale (sunt ancore în aceeași pagină) -->
+  <url>
+    <loc>https://www.hotel-rivoli.ro/#inceput</loc>
+    <lastmod>2023-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-rivoli.ro/#inceput" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-rivoli.ro/#inceput" />
+  </url>
+  
+  <url>
+    <loc>https://www.hotel-rivoli.ro/#camere</loc>
+    <lastmod>2023-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-rivoli.ro/#camere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-rivoli.ro/#camere" />
+  </url>
+  
+  <url>
+    <loc>https://www.hotel-rivoli.ro/#locatie</loc>
+    <lastmod>2023-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-rivoli.ro/#locatie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-rivoli.ro/#locatie" />
+  </url>
+  
+  <url>
+    <loc>https://www.hotel-rivoli.ro/#contact</loc>
+    <lastmod>2023-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.hotel-rivoli.ro/#contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotel-rivoli.ro/#contact" />
+  </url>
+</urlset> 

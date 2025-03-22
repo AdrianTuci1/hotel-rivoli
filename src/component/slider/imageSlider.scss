@@ -1,26 +1,38 @@
 .image-slider {
-    margin: 40px;
+    margin-block: 40px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     position: relative;
+    aspect-ratio: 1/1;
+  
+    @media (max-width: 1024px) {
+        margin: 20px 0;
+        width: 550px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
   
     .slider-image {
       width: 620px;
       height: 620px;
       border-radius: 20px;
       object-fit: cover;
+      aspect-ratio: 1/1;
   
       @media (max-width: 1024px) {
-        width: 550px;
-        height: 550px;
+        width: 100%;
+        height: 100%;
       }
   
       @media (max-width: 768px) {
-        width: 370px;
-        height: 370px;
-        max-width: 450px;
-        max-height: 450px;
+        width: 100%;
+        height: 100vw;
+        max-width: none;
+        max-height: none;
+        padding: 0;
       }
     }
   

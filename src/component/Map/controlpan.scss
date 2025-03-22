@@ -12,14 +12,12 @@
   border-radius: 40px;
   width: 90%;
   max-width: 600px;
-  height: auto;
   font-family: "Roboto", sans-serif;
 
   @include media.desktop {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    height: 160px;
     width: 80%;
     max-width: 600px;
     gap: 30px; // Space between columns
@@ -86,5 +84,11 @@
 @media (min-width: 1024px) {
   .control-panelo{
     margin-bottom: 100px;
+  }
+}
+
+@media (min-height: 800px) {
+  .control-panelo{
+    margin-bottom: 200px;
   }
 }
